@@ -93,9 +93,7 @@ export default function Header() {
                         className="object-contain"
                       />
                     </Link>
-                    <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
-                      <X className="h-6 w-6" />
-                    </Button>
+ 
                   </div>
                   <nav>
                     <ul className="space-y-4">
