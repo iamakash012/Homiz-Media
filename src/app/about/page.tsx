@@ -4,6 +4,7 @@ import { Building, Target, Users, Lightbulb, Phone, Mail, MapPin } from 'lucide-
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import img1 from "../../images/img1.jpg";
+
 const AboutPage = () => {
   const teamMembers = [
     { name: 'Akash Mahato', role: 'Founder & CEO', image: 'https://picsum.photos/seed/team1/400/400', dataAiHint: 'professional headshot' },
@@ -26,17 +27,20 @@ const AboutPage = () => {
   return (
     <div className="bg-background text-foreground">
       {/* Hero Section */}
-      <section className="relative h-[60vh] w-full overflow-hidden">
-        <video
-          src="https://pouch.jumpshare.com/preview/mkm7nrtJDd06MNuxnu1QAAE3f5O-ko4eo_pGfe6d3tETmUolAcJZVLkyPX_-U5KvA9ocxN6eWrkeQR_Ypy3mchmjeynB8i-0YnYBo4Csn8jbvSPesXB9SbzsxUu6x11YEkLRvxHv1Xaz35yTK_hnxG6yjbN-I2pg_cnoHs_AmgI.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover brightness-105"
-        />
-        <div className="absolute inset-0 bg-black/50"></div>
-      </section>
+      <section className="relative flex justify-center items-center py-12 mt-12">
+  <div className="relative w-[80%] md:w-[60%] lg:w-[40%] aspect-video rounded-2xl overflow-hidden shadow-lg">
+    <video
+      src="/videos/about.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full h-full object-cover brightness-105"
+    />
+    <div className="absolute inset-0 bg-black/50"></div>
+  </div>
+</section>
+
 
       {/* About Content */}
       <section className="py-20 md:py-24 text-center">

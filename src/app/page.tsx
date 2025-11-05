@@ -181,6 +181,8 @@ const videoItems = [
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
 
   return (
+
+
     <div className="flex flex-col">
       
       {/* Hero Section */}
@@ -190,14 +192,25 @@ const videoItems = [
           style={{ opacity, scale }}
           className="container mx-auto px-4 relative z-10 flex flex-col items-center"
         >
-           <GlowingCube />
-           <h1 className="font-headline text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight flex justify-center flex-wrap mt-8">
-            {'HOMIZ  Media'.split('').map((char, index) => (
-              <span key={index} className="transition-all duration-300 ease-in-out hover:text-primary hover:scale-125 cursor-pointer">
-                {char === ' ' ? ' ' : char}
-              </span>
-            ))}
-          </h1>
+         <div className="mt-0 md:mt-8 hidden md:block">
+  <GlowingCube />
+</div>
+
+
+
+
+
+ <h1 className="font-headline text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight flex justify-center flex-wrap mt-8">
+  {'HOMIZ Media'.split('').map((char, index) => (
+    <span
+      key={index}
+      className="transition-all duration-300 ease-in-out hover:text-primary hover:scale-125 cursor-pointer"
+    >
+      {char === ' ' ? '\u00A0' : char}
+    </span>
+  ))}
+</h1>
+
           <div className="mt-2 text-lg md:text-2xl text-primary font-medium h-8">
             <TypingEffect />
           </div>
@@ -280,7 +293,7 @@ const videoItems = [
         </div>
       </section>
 
-
+            
 
       {/* Contact Section */}
       <section id="contact" className="w-full py-20 md:py-24">
@@ -306,5 +319,6 @@ const videoItems = [
           </div>
       </section>
     </div>
+
   );
 }
