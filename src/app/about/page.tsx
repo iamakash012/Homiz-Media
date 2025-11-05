@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Building, Target, Users, Lightbulb, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-
+import img1 from "../../images/img1.jpg";
 const AboutPage = () => {
   const teamMembers = [
     { name: 'Akash Mahato', role: 'Founder & CEO', image: 'https://picsum.photos/seed/team1/400/400', dataAiHint: 'professional headshot' },
@@ -68,7 +68,7 @@ const AboutPage = () => {
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://picsum.photos/seed/mission/800/600"
+                src={img1}
                 alt="Team collaborating"
                 fill
                 className="object-cover"

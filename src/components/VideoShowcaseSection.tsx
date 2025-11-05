@@ -13,7 +13,7 @@ const videoItems = [
     height: 800,
   },
   {
-    title: "Documentaries",
+    title: "Website",
     category: "Film Production",
     image: "https://picsum.photos/seed/docu/800/600",
     description: "Our team provides in-depth analysis and post-production where raw footage is transformed into a polished, narrative-driven documentary.",
