@@ -15,7 +15,7 @@ const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
-  { name: 'Services', href: '/services' },
+  { name: 'Services', href: '/ services' },
   { name: 'Portfolio', href: '/social-portfolio' },
 ];
 
@@ -35,7 +35,7 @@ export default function Header() {
       <div className={headerContainerClass}>
         <div className="glass-nav flex items-center justify-between h-14 rounded-full px-4">
           
-          <Link href="/about" className="flex-shrink-0 ml-2">
+          <Link href="/" className="flex-shrink-0 ml-2">
               <Image 
                 src="https://i.ibb.co/WW89WN2N/Homiz-Website-Design.png"
                 alt="HOMIZ Media Logo"
